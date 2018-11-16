@@ -1,0 +1,67 @@
+/*
+    
+    Test Class:         TestProcessAccount
+    @Author:            kgopalan 
+    @Created Date:      06-June-2014
+    @Description:       Test class for ProcessAccount Class
+*/
+//Commeted the whole class part of Reference Edge managed package uninstallation from the system. This is done for JIRA SALES-4483.
+
+@isTest(SeeAllData=true)
+public class TestProcessAccount{
+static testmethod void testmethod1()
+{
+ProcessAccount ProAcc = new ProcessAccount ();
+}
+/*
+static testMethod void testupdateAccount()
+    {
+        //<T01> 
+        
+        
+            INFA_Territory__c infaTerr = new Infa_Territory__c(Name = 'Cloud Enterprise',Inside_Sales_Rep__c=userInfo.getUserID(), Field_Sales_Rep__c=userInfo.getUserID()
+            ,Type__c='Territory',Cloud_Sales_Rep__c=userInfo.getUserId());
+            insert infaTerr;
+            
+            Account acc=new Account();
+            acc.name='TestAccount4';
+            acc.Type='Potential Partner';
+            acc.Phone='1234447890';
+            acc.BillingStreet='XYZ';
+            acc.BillingCity='TestCity';
+            acc.BillingCountry='TestCountry';        
+            acc.BillingPostalCode='500026';
+            acc.territory__c = infaTerr.id;
+            acc.Cloud_CSM_Rep__c = Userinfo.getUserId();
+            insert acc;
+            
+            Account acc1=new Account();
+            acc1.name='TestAccount43';
+            acc1.Type='Potential Partner';
+            acc1.Phone='1234447890';
+            acc1.BillingStreet='XYZ';
+            acc1.BillingCity='TestCity';
+            acc1.BillingCountry='TestCountry';        
+            acc1.BillingPostalCode='500026';
+            acc1.territory__c = infaTerr.id;
+            acc1.Cloud_CSM_Rep__c = Userinfo.getUserId();
+            acc1.INFA_Field_Rep__c=Userinfo.getUserId();
+            insert acc1;
+        
+            refedge__Reference_Basic_Information__c refProfile1=new refedge__Reference_Basic_Information__c();
+            
+            //refProfile1.refedge__Reference_Owner__c=;
+            refProfile1.refedge__Account__c=acc1.id;
+            insert refProfile1;
+            User u2 = [Select id, name from User where ProfileId = :Userinfo.getProfileId() and Id != :Userinfo.getUserId() limit 1 ];
+            test.startTest();
+            
+            acc1.INFA_Field_Rep__c=u2.id;
+            update acc1;
+            
+            test.stopTest();
+            
+            
+    }// end of method.
+    */
+}// end of class.
